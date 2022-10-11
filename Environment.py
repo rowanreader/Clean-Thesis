@@ -131,7 +131,7 @@ class Environment(gym.Env):
 
     # reward must increase the closer it gets to goal too
     def getReward(self, action):
-        thresh = 50  # if within 30 mm close enough
+        thresh = 50  # if within 50 mm close enough
         outcome = self.outcome
         # default -1 for step
         if outcome == -1: # fail
